@@ -1,0 +1,262 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: ../../bench/EX/EX_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    358       222       136      62.0
+
+=================================================================================
+=== File: ../../bench/ID/id_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    368       254       114      69.0
+
+=================================================================================
+=== File: ../../bench/IF/if_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     68        66         2      97.0
+
+=================================================================================
+=== File: ../../bench/MEM/mem_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                      2         2         0     100.0
+
+=================================================================================
+=== File: ../../bench/WB/wb_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    306       102       204      33.3
+
+=================================================================================
+=== File: ../../bench/clock_generator.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            2         2         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                      4         4         0     100.0
+
+=================================================================================
+=== File: ../../bench/hazard_detection/hazard_detection_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     36        36         0     100.0
+
+=================================================================================
+=== File: ../../bench/register_file/register_file_assertions.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            2         2         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    238       106       132      44.5
+
+=================================================================================
+=== File: ../../bench/top/mips_16_top.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     20        20         0     100.0
+
+=================================================================================
+=== File: ../../bench/top/mips_16_top_tb.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           44        30        14      68.1
+    Branches                        16        10         6      62.5
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    452        38       414       8.4
+
+=================================================================================
+=== File: ../../bench/top/reg_saver.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           64        64         0     100.0
+    Branches                         2         2         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                   1348        80      1268       5.9
+
+=================================================================================
+=== File: ../../mips_16/rtl/EX_stage.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            4         4         0     100.0
+    Branches                         2         2         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    358       222       136      62.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/ID_stage.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           85        78         7      91.7
+    Branches                        41        39         2      95.1
+    FEC Condition Terms              4         4         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    514       372       142      72.3
+
+=================================================================================
+=== File: ../../mips_16/rtl/IF_stage.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            4         4         0     100.0
+    Branches                         5         5         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     68        66         2      97.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/MEM_stage.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            8         8         0     100.0
+    Branches                         2         2         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    216        90       126      41.6
+
+=================================================================================
+=== File: ../../mips_16/rtl/WB_stage.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            1         1         0     100.0
+    Branches                         2         2         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    302        98       204      32.4
+
+=================================================================================
+=== File: ../../mips_16/rtl/alu.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           12        10         2      83.3
+    Branches                        10         9         1      90.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    102        78        24      76.4
+
+=================================================================================
+=== File: ../../mips_16/rtl/data_mem.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            4         4         0     100.0
+    Branches                         2         2         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     16        16         0     100.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/hazard_detection_unit.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            4         4         0     100.0
+    Branches                         4         4         0     100.0
+    FEC Condition Terms              8         8         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     32        32         0     100.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/instruction_mem.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            1         1         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                     66        66         0     100.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/mips_16_core_top.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    754       340       414      45.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/mips_if.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                            0         0         0     100.0
+    Branches                         0         0         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    100        42        58      42.0
+
+=================================================================================
+=== File: ../../mips_16/rtl/register_file.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           12        12         0     100.0
+    Branches                         7         7         0     100.0
+    FEC Condition Terms              0         0         0     100.0
+    FEC Expression Terms             0         0         0     100.0
+    Toggle Bins                    200        80       120      40.0
+
+
+TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 39
+
+TOTAL ASSERTION COVERAGE: 100.0%  ASSERTIONS: 39
+
+Total Coverage By File (code coverage only, filtered view): 80.5%
+

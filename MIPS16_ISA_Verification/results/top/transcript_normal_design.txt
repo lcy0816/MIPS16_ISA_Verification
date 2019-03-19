@@ -1,0 +1,517 @@
+# vsim -c -novopt -coverage -voptargs="+cover=bcest+/mips_16_top/uut" work.mips_16_top -do "toggle add -full sim:/mips_16_top/uut/*; run -all; coverage report -instance /mips_16_top/uut;coverage report -instance /mips_16_top/uut/*; fcover report -r /mips_16_top/uut/*;quit" -gSAVE_REGS=1 
+# Start time: 15:20:53 on Mar 18,2019
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mips_16_top
+# Loading sv_std.std
+# Loading work.mips_16_top
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.clock_generator
+# Loading work.clock_generator
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mips_16_core_top
+# Loading work.mips_16_core_top
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.IF_stage
+# Loading work.IF_stage
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.instruction_mem
+# Loading work.instruction_mem
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.ID_stage
+# Loading work.ID_stage
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.EX_stage
+# Loading work.EX_stage
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.alu
+# Loading work.alu
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.MEM_stage
+# Loading work.MEM_stage
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mem_if
+# Loading work.mem_if
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.data_mem
+# Loading work.data_mem
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.WB_stage
+# Loading work.WB_stage
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.register_file
+# Loading work.register_file
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.hazard_detection_unit
+# Loading work.hazard_detection_unit
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mips_16_top_tb
+# Loading work.mips_16_top_tb
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.reg_saver
+# Loading work.reg_saver
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.id_assertions
+# Loading work.id_assertions
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.EX_assertions
+# Loading work.EX_assertions
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.if_assertions
+# Loading work.if_assertions
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.wb_assertions
+# Loading work.wb_assertions
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.register_file_assertions
+# Loading work.register_file_assertions
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.hazard_detection_assertions
+# Loading work.hazard_detection_assertions
+# Refreshing /home/genovese/common/Documents/remote/ECE571/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mem_assertions
+# Loading work.mem_assertions
+# ** Warning: (vsim-PLI-3691) ../../bench/top/mips_16_top_tb.sv(188): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mips_16_top/u_mips_16_top_tb/#anonblk#116359842#164#4#/#anonblk#116359842#188#4# File: ../../bench/top/mips_16_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/top/mips_16_top_tb.sv(189): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mips_16_top/u_mips_16_top_tb/#anonblk#116359842#164#4#/#anonblk#116359842#189#4# File: ../../bench/top/mips_16_top_tb.sv
+# toggle add -full sim:/mips_16_top/uut/*
+# 0
+#  run -all
+#######################################################################################
+################### RUNNING TEST hazard_detection ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_detection.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r0 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r0.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r1 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r1.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r2 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r2.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r3 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r3.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r4 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r4.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r5 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r5.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r6 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r6.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST hazard_r7 ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/hazard_r7.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST add ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/add.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST sub ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/sub.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST and ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/and.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST or ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/or.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST xor ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/xor.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST sl ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/sl.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST sr ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/sr.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST sru ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/sru.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST addi ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/addi.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST branch_taken ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/branch_taken.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST branch_not_taken ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/branch_not_taken.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST nop ----         200 cycles ##################
+# *************** TEST ../../bench/top/testcases/nop.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R0_load ----        3100 cycles ##################
+# *************** TEST ../../bench/top/testcases/R0_load.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R1_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R1_load_store.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R2_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R2_load_store.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R3_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R3_load_store.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R4_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R4_load_store.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R5_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R5_load_store.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R6_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R6_load_store.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R7_load_store ----        3350 cycles ##################
+# *************** TEST ../../bench/top/testcases/R7_load_store.prog PASS
+# 
+# ********** SIMULATION PASSED - NO ERRORS FOUND! ***********
+# ** Note: $stop    : ../../bench/top/mips_16_top_tb.sv(216)
+#    Time: 308080 ns  Iteration: 1  Instance: /mips_16_top/u_mips_16_top_tb
+# Break in Module mips_16_top_tb at ../../bench/top/mips_16_top_tb.sv line 216
+# Stopped at ../../bench/top/mips_16_top_tb.sv line 216
+#  coverage report -instance /mips_16_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut
+# === Design Unit: work.mips_16_core_top
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            0         0         0     100.0
+#     Branches                         0         0         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    754       340       414      45.0
+# 
+# 
+# Total Coverage By Instance (filtered view): 45.0%
+# 
+# 
+# coverage report -instance /mips_16_top/uut/*
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/IF_stage_inst
+# === Design Unit: work.IF_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         5         5         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                     68        66         2      97.0
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/ID_stage_inst
+# === Design Unit: work.ID_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           85        78         7      91.7
+#     Branches                        41        39         2      95.1
+#     FEC Condition Terms              4         4         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    514       372       142      72.3
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/EX_stage_inst
+# === Design Unit: work.EX_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    358       222       136      62.0
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/MEM_stage_inst
+# === Design Unit: work.MEM_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            8         8         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    216        90       126      41.6
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/WB_stage_inst
+# === Design Unit: work.WB_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            1         1         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    302        98       204      32.4
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/register_file_inst
+# === Design Unit: work.register_file
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           12        12         0     100.0
+#     Branches                         7         7         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    200        80       120      40.0
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/hazard_detection_unit_inst
+# === Design Unit: work.hazard_detection_unit
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         4         4         0     100.0
+#     FEC Condition Terms              8         8         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                     32        32         0     100.0
+# 
+# 
+# Total Coverage By Instance (filtered view): 86.9%
+# 
+# 
+#  fcover report -r /mips_16_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/pc_increment_c 
+#                                          if_assertions Verilog  SVA  ../../bench/IF/if_assertions.sv(25)
+#                                                                               22172 Covered   
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/pc_stall_c 
+#                                          if_assertions Verilog  SVA  ../../bench/IF/if_assertions.sv(36)
+#                                                                                6490 Covered   
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/pc_branch_c 
+#                                          if_assertions Verilog  SVA  ../../bench/IF/if_assertions.sv(47)
+#                                                                                2059 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_stall_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(48)
+#                                                                                6490 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_op_stall_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(59)
+#                                                                                6490 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_dest_stall_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(70)
+#                                                                                6490 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_NOP_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(81)
+#                                                                               20460 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_ADD_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(92)
+#                                                                                  51 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SUB_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(103)
+#                                                                                2069 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_AND_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(114)
+#                                                                                   9 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_OR_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(125)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_XOR_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(136)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SL_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(147)
+#                                                                                  18 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SR_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(158)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SRU_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(169)
+#                                                                                   8 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_ADDI_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(180)
+#                                                                                 151 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_LD_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(191)
+#                                                                                1800 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_ST_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(202)
+#                                                                                2048 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_wb_mux_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(213)
+#                                                                                4106 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_add_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(37)
+#                                                                                4079 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sub_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(46)
+#                                                                                2069 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_and_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(58)
+#                                                                                   9 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_or_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(68)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_xor_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(80)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sl_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(89)
+#                                                                                  18 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sr_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(102)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sru_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(111)
+#                                                                                   8 Covered   
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/mem_write_c 
+#                                          mem_assertions Verilog  SVA  ../../bench/MEM/mem_assertions.sv(18)
+#                                                                                2048 Covered   
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/mem_read_c 
+#                                          mem_assertions Verilog  SVA  ../../bench/MEM/mem_assertions.sv(25)
+#                                                                                6230 Covered   
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/wb_data_true_c 
+#                                          wb_assertions Verilog  SVA  ../../bench/WB/wb_assertions.sv(30)
+#                                                                                1800 Covered   
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/wb_data_false_c 
+#                                          wb_assertions Verilog  SVA  ../../bench/WB/wb_assertions.sv(37)
+#                                                                                2423 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr1_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(19)
+#                                                                               14577 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr2_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(26)
+#                                                                               13790 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr1_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(33)
+#                                                                               16173 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr2_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(40)
+#                                                                               16960 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_write_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(60)
+#                                                                                4136 Covered   
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/stall_length_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(18)
+#                                                                                6490 Covered   
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/stall_operation_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(34)
+#                                                                                6490 Covered   
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/stall_operation_backwards_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(41)
+#                                                                                6490 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 39
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/assert__pc_branch
+#                      ../../bench/IF/if_assertions.sv(42)       0     1
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/assert__pc_stall
+#                      ../../bench/IF/if_assertions.sv(31)       0     1
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/assert__pc_increment
+#                      ../../bench/IF/if_assertions.sv(20)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_BZ
+#                      ../../bench/ID/id_assertions.sv(208)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_ST
+#                      ../../bench/ID/id_assertions.sv(197)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_LD
+#                      ../../bench/ID/id_assertions.sv(186)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_ADDI
+#                      ../../bench/ID/id_assertions.sv(175)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SRU
+#                      ../../bench/ID/id_assertions.sv(164)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SR
+#                      ../../bench/ID/id_assertions.sv(153)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SL
+#                      ../../bench/ID/id_assertions.sv(142)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_XOR
+#                      ../../bench/ID/id_assertions.sv(131)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_OR
+#                      ../../bench/ID/id_assertions.sv(120)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_AND
+#                      ../../bench/ID/id_assertions.sv(109)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SUB
+#                      ../../bench/ID/id_assertions.sv(98)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_ADD
+#                      ../../bench/ID/id_assertions.sv(87)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_NOP
+#                      ../../bench/ID/id_assertions.sv(76)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__id_dest_stall
+#                      ../../bench/ID/id_assertions.sv(65)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__id_op_stall
+#                      ../../bench/ID/id_assertions.sv(54)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__id_stall
+#                      ../../bench/ID/id_assertions.sv(43)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sru
+#                      ../../bench/EX/EX_assertions.sv(109)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sr
+#                      ../../bench/EX/EX_assertions.sv(96)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sl
+#                      ../../bench/EX/EX_assertions.sv(87)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_xor
+#                      ../../bench/EX/EX_assertions.sv(75)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_or
+#                      ../../bench/EX/EX_assertions.sv(66)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_and
+#                      ../../bench/EX/EX_assertions.sv(53)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sub
+#                      ../../bench/EX/EX_assertions.sv(44)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_add
+#                      ../../bench/EX/EX_assertions.sv(31)       0     1
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/assert__mem_read
+#                      ../../bench/MEM/mem_assertions.sv(24)       0     1
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/assert__mem_write
+#                      ../../bench/MEM/mem_assertions.sv(13)       0     1
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/assert__wb_data_false
+#                      ../../bench/WB/wb_assertions.sv(36)       0     1
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/assert__wb_data_true
+#                      ../../bench/WB/wb_assertions.sv(29)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_write
+#                      ../../bench/register_file/register_file_assertions.sv(56)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr2_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(39)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr1_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(32)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr2_read
+#                      ../../bench/register_file/register_file_assertions.sv(25)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr1_read
+#                      ../../bench/register_file/register_file_assertions.sv(18)       0     1
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/assert__stall_operation_backwards
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(40)       0     1
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/assert__stall_operation
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(33)       0     1
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/assert__stall_length
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(17)       0     1
+# 
+# quit
+# End time: 15:21:01 on Mar 18,2019, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 3

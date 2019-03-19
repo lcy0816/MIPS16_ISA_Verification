@@ -1,0 +1,168 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/id_top/uut" work.id_top -do "toggle add -full sim:/id_top/uut/*; run -all;  coverage report -instance /id_top/uut; fcover report -r /id_top/uut/*; quit" 
+# Start time: 01:16:54 on Mar 16,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.id_top(fast)
+# Loading work.ID_stage(fast)
+# Loading work.id_assertions(fast)
+# Loading work.id_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(88): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(89): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(90): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(91): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(92): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(94): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(95): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(96): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(97): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(98): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/ID/id_top_tb.sv(99): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /id_top/u_id_top_tb/#anonblk#112609538#68#4# File: ../../bench/ID/id_top_tb.sv
+# toggle add -full sim:/id_top/uut/*
+# 0
+#  run -all
+# ************* TEST nop PASSED!!!
+# ************* TEST addi PASSED!!!
+# ************* TEST sub PASSED!!!
+# ************* TEST and PASSED!!!
+# ************* TEST or PASSED!!!
+# ************* TEST xor PASSED!!!
+# ************* TEST sl PASSED!!!
+# ************* TEST sr PASSED!!!
+# ************* TEST sru PASSED!!!
+# ************* TEST R0_load PASSED!!!
+# ************* TEST R1_load_store PASSED!!!
+# ************* TEST branch_taken PASSED!!!
+# ************* TEST branch_not_taken PASSED!!!
+# *********** ID STAGE UNIT TESTCASES PASSED!!!! *********** 
+# ** Note: $stop    : ../../bench/ID/id_top_tb.sv(184)
+#    Time: 84255 ns  Iteration: 1  Instance: /id_top/u_id_top_tb
+# Break in Module id_top_tb at ../../bench/ID/id_top_tb.sv line 184
+# Stopped at ../../bench/ID/id_top_tb.sv line 184
+#   coverage report -instance /id_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /id_top/uut
+# === Design Unit: work.ID_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           85        74        11      87.0
+#     Branches                        41        38         3      92.6
+#     FEC Condition Terms              4         4         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    662       356       306      53.7
+# 
+# 
+# Total Coverage By Instance (filtered view): 83.3%
+# 
+# 
+#  fcover report -r /id_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /id_top/uut/u_assertions/id_stall_c      id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(48)
+#                                                                                1724 Covered   
+# /id_top/uut/u_assertions/id_op_stall_c   id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(59)
+#                                                                                1724 Covered   
+# /id_top/uut/u_assertions/id_dest_stall_c id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(70)
+#                                                                                1724 Covered   
+# /id_top/uut/u_assertions/OP_NOP_c        id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(81)
+#                                                                                6211 Covered   
+# /id_top/uut/u_assertions/OP_ADD_c        id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(92)
+#                                                                                   0 ZERO      
+# /id_top/uut/u_assertions/OP_SUB_c        id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(103)
+#                                                                                 531 Covered   
+# /id_top/uut/u_assertions/OP_AND_c        id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(114)
+#                                                                                   8 Covered   
+# /id_top/uut/u_assertions/OP_OR_c         id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(125)
+#                                                                                   8 Covered   
+# /id_top/uut/u_assertions/OP_XOR_c        id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(136)
+#                                                                                   8 Covered   
+# /id_top/uut/u_assertions/OP_SL_c         id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(147)
+#                                                                                  10 Covered   
+# /id_top/uut/u_assertions/OP_SR_c         id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(158)
+#                                                                                   8 Covered   
+# /id_top/uut/u_assertions/OP_SRU_c        id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(169)
+#                                                                                   8 Covered   
+# /id_top/uut/u_assertions/OP_ADDI_c       id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(180)
+#                                                                                  56 Covered   
+# /id_top/uut/u_assertions/OP_LD_c         id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(191)
+#                                                                                   2 Covered   
+# /id_top/uut/u_assertions/OP_ST_c         id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(202)
+#                                                                                 512 Covered   
+# /id_top/uut/u_assertions/id_wb_mux_c     id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(213)
+#                                                                                1038 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 93.7%  COVERS: 16
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /id_top/uut/u_assertions/assert__OP_BZ
+#                      ../../bench/ID/id_assertions.sv(208)       0     1
+# /id_top/uut/u_assertions/assert__OP_ST
+#                      ../../bench/ID/id_assertions.sv(197)       0     1
+# /id_top/uut/u_assertions/assert__OP_LD
+#                      ../../bench/ID/id_assertions.sv(186)       0     1
+# /id_top/uut/u_assertions/assert__OP_ADDI
+#                      ../../bench/ID/id_assertions.sv(175)       0     1
+# /id_top/uut/u_assertions/assert__OP_SRU
+#                      ../../bench/ID/id_assertions.sv(164)       0     1
+# /id_top/uut/u_assertions/assert__OP_SR
+#                      ../../bench/ID/id_assertions.sv(153)       0     1
+# /id_top/uut/u_assertions/assert__OP_SL
+#                      ../../bench/ID/id_assertions.sv(142)       0     1
+# /id_top/uut/u_assertions/assert__OP_XOR
+#                      ../../bench/ID/id_assertions.sv(131)       0     1
+# /id_top/uut/u_assertions/assert__OP_OR
+#                      ../../bench/ID/id_assertions.sv(120)       0     1
+# /id_top/uut/u_assertions/assert__OP_AND
+#                      ../../bench/ID/id_assertions.sv(109)       0     1
+# /id_top/uut/u_assertions/assert__OP_SUB
+#                      ../../bench/ID/id_assertions.sv(98)       0     1
+# /id_top/uut/u_assertions/assert__OP_ADD
+#                      ../../bench/ID/id_assertions.sv(87)       0     0
+# /id_top/uut/u_assertions/assert__OP_NOP
+#                      ../../bench/ID/id_assertions.sv(76)       0     1
+# /id_top/uut/u_assertions/assert__id_dest_stall
+#                      ../../bench/ID/id_assertions.sv(65)       0     1
+# /id_top/uut/u_assertions/assert__id_op_stall
+#                      ../../bench/ID/id_assertions.sv(54)       0     1
+# /id_top/uut/u_assertions/assert__id_stall
+#                      ../../bench/ID/id_assertions.sv(43)       0     1
+# 
+#  quit
+# End time: 01:16:56 on Mar 16,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 11

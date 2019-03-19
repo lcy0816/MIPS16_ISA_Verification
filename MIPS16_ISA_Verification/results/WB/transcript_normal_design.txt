@@ -1,0 +1,106 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/wb_top/uut" work.wb_top -do "toggle add -full sim:/wb_top/uut/*; run -all;  coverage report -instance /wb_top/uut; fcover report -r /wb_top/uut/*; quit" 
+# Start time: 12:43:08 on Mar 16,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.wb_top(fast)
+# Loading work.WB_stage(fast)
+# Loading work.wb_assertions(fast)
+# Loading work.wb_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/WB/wb_top_tb.sv(79): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /wb_top/u_wb_top_tb/#anonblk#112605986#65#4# File: ../../bench/WB/wb_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/WB/wb_top_tb.sv(80): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /wb_top/u_wb_top_tb/#anonblk#112605986#65#4# File: ../../bench/WB/wb_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/WB/wb_top_tb.sv(81): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /wb_top/u_wb_top_tb/#anonblk#112605986#65#4# File: ../../bench/WB/wb_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/WB/wb_top_tb.sv(82): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /wb_top/u_wb_top_tb/#anonblk#112605986#65#4# File: ../../bench/WB/wb_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/WB/wb_top_tb.sv(83): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /wb_top/u_wb_top_tb/#anonblk#112605986#65#4# File: ../../bench/WB/wb_top_tb.sv
+# toggle add -full sim:/wb_top/uut/*
+# 0
+#  run -all
+# ************* TEST R0_load PASSED!!!
+# ************* TEST R1_load_store PASSED!!!
+# ************* TEST R2_load_store PASSED!!!
+# ************* TEST R3_load_store PASSED!!!
+# ************* TEST R4_load_store PASSED!!!
+# ************* TEST R5_load_store PASSED!!!
+# ************* TEST R6_load_store PASSED!!!
+# ************* TEST R7_load_store PASSED!!!
+# ************* TEST nop PASSED!!!
+# ************* TEST addi PASSED!!!
+# ************* TEST sub PASSED!!!
+# ************* TEST and PASSED!!!
+# ************* TEST or PASSED!!!
+# ************* TEST xor PASSED!!!
+# ************* TEST sl PASSED!!!
+# ************* TEST sr PASSED!!!
+# ************* TEST sru PASSED!!!
+# ************* TEST add PASSED!!!
+# ************* TEST hazard_detection PASSED!!!
+# *********** IF STAGE UNIT TESTCASES PASSED!!!! *********** 
+# ** Note: $stop    : ../../bench/WB/wb_top_tb.sv(134)
+#    Time: 287875 ns  Iteration: 1  Instance: /wb_top/u_wb_top_tb
+# Break in Module wb_top_tb at ../../bench/WB/wb_top_tb.sv line 134
+# Stopped at ../../bench/WB/wb_top_tb.sv line 134
+#   coverage report -instance /wb_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /wb_top/uut
+# === Design Unit: work.WB_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            1         1         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    398        92       306      23.1
+# 
+# 
+# Total Coverage By Instance (filtered view): 74.3%
+# 
+# 
+#  fcover report -r /wb_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /wb_top/uut/u_assertions/wb_data_true_c  wb_assertions Verilog  SVA  ../../bench/WB/wb_assertions.sv(30)
+#                                                                                1800 Covered   
+# /wb_top/uut/u_assertions/wb_data_false_c wb_assertions Verilog  SVA  ../../bench/WB/wb_assertions.sv(37)
+#                                                                                2269 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 2
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /wb_top/uut/u_assertions/assert__wb_data_false
+#                      ../../bench/WB/wb_assertions.sv(36)       0     1
+# /wb_top/uut/u_assertions/assert__wb_data_true
+#                      ../../bench/WB/wb_assertions.sv(29)       0     1
+# 
+#  quit
+# End time: 12:43:10 on Mar 16,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 5

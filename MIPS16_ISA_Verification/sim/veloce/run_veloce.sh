@@ -1,0 +1,2 @@
+cp -r ../../../finalproj-chenyangl_souvikr_robertog_aishwaryad/ /stash/veloce/$USER/
+ssh -Y -t $USER@velocesolo.ece.pdx.edu "source /pkgs/mentor/veloce/env.os3 && cd ~/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/veloce/ && make"

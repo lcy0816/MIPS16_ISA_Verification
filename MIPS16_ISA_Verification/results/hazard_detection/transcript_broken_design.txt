@@ -1,0 +1,305 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/hazard_detection_top/uut" work.hazard_detection_top -do "toggle add -full sim:/hazard_detection_top/uut/*; run -all;  coverage report -instance /hazard_detection_top/uut; fcover report -r /hazard_detection_top/uut/*; quit" 
+# Start time: 12:45:09 on Mar 16,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.hazard_detection_top(fast)
+# Loading work.hazard_detection_assertions(fast)
+# Loading work.hazard_detection_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/hazard_detection/hazard_detection_top_tb.sv(60): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /hazard_detection_top/u_hazard_detection_top_tb/#anonblk#68656258#47#4# File: ../../bench/hazard_detection/hazard_detection_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/hazard_detection/hazard_detection_top_tb.sv(61): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /hazard_detection_top/u_hazard_detection_top_tb/#anonblk#68656258#47#4# File: ../../bench/hazard_detection/hazard_detection_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/hazard_detection/hazard_detection_top_tb.sv(62): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /hazard_detection_top/u_hazard_detection_top_tb/#anonblk#68656258#47#4# File: ../../bench/hazard_detection/hazard_detection_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/hazard_detection/hazard_detection_top_tb.sv(63): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /hazard_detection_top/u_hazard_detection_top_tb/#anonblk#68656258#47#4# File: ../../bench/hazard_detection/hazard_detection_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/hazard_detection/hazard_detection_top_tb.sv(64): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /hazard_detection_top/u_hazard_detection_top_tb/#anonblk#68656258#47#4# File: ../../bench/hazard_detection/hazard_detection_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/hazard_detection/hazard_detection_top_tb.sv(65): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /hazard_detection_top/u_hazard_detection_top_tb/#anonblk#68656258#47#4# File: ../../bench/hazard_detection/hazard_detection_top_tb.sv
+# toggle add -full sim:/hazard_detection_top/uut/*
+# 0
+#  run -all
+# ************* TEST hazard_r0 PASSED!!!
+# ** Error: Assertion error.
+#    Time: 2305 ns Started: 2305 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r1 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 2305 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 2315 ns Started: 2315 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r1 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 2315 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 2325 ns Started: 2325 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r1 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 2325 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 2395 ns Started: 2395 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r1 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 2395 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 2405 ns Started: 2405 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r1 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 2405 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 2485 ns Started: 2485 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r1 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 2485 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r1 FAILED!!!
+#    Time: 4035 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4325 ns Started: 4325 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r2 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 4325 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 4335 ns Started: 4335 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r2 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 4335 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 4345 ns Started: 4345 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r2 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 4345 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 4415 ns Started: 4415 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r2 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 4415 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 4425 ns Started: 4425 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r2 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 4425 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 4505 ns Started: 4505 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r2 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 4505 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r2 FAILED!!!
+#    Time: 6055 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6345 ns Started: 6345 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r3 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 6345 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 6355 ns Started: 6355 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r3 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 6355 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 6365 ns Started: 6365 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r3 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 6365 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 6435 ns Started: 6435 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r3 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 6435 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 6445 ns Started: 6445 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r3 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 6445 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 6525 ns Started: 6525 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r3 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 6525 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r3 FAILED!!!
+#    Time: 8075 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8365 ns Started: 8365 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r4 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 8365 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 8375 ns Started: 8375 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r4 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 8375 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 8385 ns Started: 8385 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r4 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 8385 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 8455 ns Started: 8455 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r4 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 8455 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 8465 ns Started: 8465 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r4 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 8465 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 8545 ns Started: 8545 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r4 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 8545 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r4 FAILED!!!
+#    Time: 10095 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 10385 ns Started: 10385 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r5 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 10385 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 10395 ns Started: 10395 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r5 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 10395 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 10405 ns Started: 10405 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r5 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 10405 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 10475 ns Started: 10475 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r5 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 10475 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 10485 ns Started: 10485 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r5 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 10485 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 10565 ns Started: 10565 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r5 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 10565 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r5 FAILED!!!
+#    Time: 12115 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 12405 ns Started: 12405 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r6 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 12405 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 12415 ns Started: 12415 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r6 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 12415 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 12425 ns Started: 12425 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r6 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 12425 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 12495 ns Started: 12495 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r6 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 12495 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 12505 ns Started: 12505 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r6 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 12505 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 12585 ns Started: 12585 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r6 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 12585 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r6 FAILED!!!
+#    Time: 14135 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 14425 ns Started: 14425 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14425 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 14435 ns Started: 14435 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14435 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 14445 ns Started: 14445 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14445 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 14515 ns Started: 14515 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14515 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 14525 ns Started: 14525 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14525 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 14605 ns Started: 14605 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14605 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_r7 FAILED!!!
+#    Time: 16155 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 16385 ns Started: 16385 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_detection - ERROR WHILE COMPARING OUTPUTS
+#    Time: 16385 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 16395 ns Started: 16395 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_detection - ERROR WHILE COMPARING OUTPUTS
+#    Time: 16395 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 16405 ns Started: 16405 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_detection - ERROR WHILE COMPARING OUTPUTS
+#    Time: 16405 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 16445 ns Started: 16445 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_detection - ERROR WHILE COMPARING OUTPUTS
+#    Time: 16445 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 16455 ns Started: 16455 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_detection - ERROR WHILE COMPARING OUTPUTS
+#    Time: 16455 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: Assertion error.
+#    Time: 16505 ns Started: 16505 ns  Scope: hazard_detection_top.uut.u_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: TEST hazard_detection - ERROR WHILE COMPARING OUTPUTS
+#    Time: 16505 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.check_output File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 70
+# ** Error: ************* TEST hazard_detection FAILED!!!
+#    Time: 18175 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.#anonblk#68656258#47#4#.pass File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 78
+# ** Error: *********** HAZARD DETECTION UNIT TESTCASES FAILED!!!! ***********
+#    Time: 18175 ns  Scope: hazard_detection_top.u_hazard_detection_top_tb.final_check File: ../../bench/hazard_detection/hazard_detection_top_tb.sv Line: 89
+# ** Note: $stop    : ../../bench/hazard_detection/hazard_detection_top_tb.sv(90)
+#    Time: 18175 ns  Iteration: 1  Instance: /hazard_detection_top/u_hazard_detection_top_tb
+# Break in Module hazard_detection_top_tb at ../../bench/hazard_detection/hazard_detection_top_tb.sv line 90
+# Stopped at ../../bench/hazard_detection/hazard_detection_top_tb.sv line 90
+#   coverage report -instance /hazard_detection_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /hazard_detection_top/uut
+# === Design Unit: work.hazard_detection_unit
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         4         4         0     100.0
+#     FEC Condition Terms              8         8         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                      2         2         0     100.0
+# 
+# 
+# Total Coverage By Instance (filtered view): 100.0%
+# 
+# 
+#  fcover report -r /hazard_detection_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /hazard_detection_top/uut/u_assertions/stall_length_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(18)
+#                                                                                  48 Covered   
+# /hazard_detection_top/uut/u_assertions/stall_operation_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(34)
+#                                                                                  48 Covered   
+# /hazard_detection_top/uut/u_assertions/stall_operation_backwards_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(41)
+#                                                                                  48 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 3
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /hazard_detection_top/uut/u_assertions/assert__stall_operation_backwards
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(40)       0     1
+# /hazard_detection_top/uut/u_assertions/assert__stall_operation
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(33)      48     1
+# /hazard_detection_top/uut/u_assertions/assert__stall_length
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(17)       0     1
+# 
+#  quit
+# End time: 12:45:11 on Mar 16,2019, Elapsed time: 0:00:02
+# Errors: 105, Warnings: 6

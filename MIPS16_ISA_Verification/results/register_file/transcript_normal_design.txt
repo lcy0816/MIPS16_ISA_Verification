@@ -1,0 +1,134 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/register_file_top/uut" work.register_file_top -do "toggle add -full sim:/register_file_top/uut/*; run -all;  coverage report -instance /register_file_top/uut; fcover report -r /register_file_top/uut/*; quit" 
+# Start time: 12:43:46 on Mar 16,2019
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.register_file_top(fast)
+# Loading work.register_file_assertions(fast)
+# Loading work.register_file_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(86): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(87): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(88): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(89): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(90): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(92): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(93): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# toggle add -full sim:/register_file_top/uut/*
+# 0
+#  run -all
+# ************* TEST hazard_r0 PASSED!!!
+# ************* TEST hazard_r1 PASSED!!!
+# ************* TEST hazard_r2 PASSED!!!
+# ************* TEST hazard_r3 PASSED!!!
+# ************* TEST hazard_r4 PASSED!!!
+# ************* TEST hazard_r5 PASSED!!!
+# ************* TEST hazard_r6 PASSED!!!
+# ************* TEST hazard_r7 PASSED!!!
+# ************* TEST hazard_detection PASSED!!!
+# ************* TEST nop PASSED!!!
+# ************* TEST addi PASSED!!!
+# ************* TEST sub PASSED!!!
+# ************* TEST and PASSED!!!
+# ************* TEST or PASSED!!!
+# ************* TEST xor PASSED!!!
+# ************* TEST sl PASSED!!!
+# ************* TEST sr PASSED!!!
+# ************* TEST sru PASSED!!!
+# ************* TEST add PASSED!!!
+# ************* TEST R0_load PASSED!!!
+# ************* TEST R1_load_store PASSED!!!
+# ************* TEST R2_load_store PASSED!!!
+# ************* TEST R3_load_store PASSED!!!
+# ************* TEST R4_load_store PASSED!!!
+# ************* TEST R5_load_store PASSED!!!
+# ************* TEST R6_load_store PASSED!!!
+# ************* TEST R7_load_store PASSED!!!
+# *********** REGISTER FILE UNIT TESTCASES PASSED!!!! *********** 
+# ** Note: $stop    : ../../bench/register_file/register_file_top_tb.sv(129)
+#    Time: 304035 ns  Iteration: 1  Instance: /register_file_top/u_register_file_top_tb
+# Break in Module register_file_top_tb at ../../bench/register_file/register_file_top_tb.sv line 129
+# Stopped at ../../bench/register_file/register_file_top_tb.sv line 129
+#   coverage report -instance /register_file_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /register_file_top/uut
+# === Design Unit: work.register_file
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           12        12         0     100.0
+#     Branches                         7         7         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    124        34        90      27.4
+# 
+# 
+# Total Coverage By Instance (filtered view): 75.8%
+# 
+# 
+#  fcover report -r /register_file_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /register_file_top/uut/u_assertions/rf_addr1_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(19)
+#                                                                               14518 Covered   
+# /register_file_top/uut/u_assertions/rf_addr2_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(26)
+#                                                                               13718 Covered   
+# /register_file_top/uut/u_assertions/rf_addr1_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(33)
+#                                                                               15832 Covered   
+# /register_file_top/uut/u_assertions/rf_addr2_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(40)
+#                                                                               16632 Covered   
+# /register_file_top/uut/u_assertions/rf_write_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(60)
+#                                                                                4108 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 5
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /register_file_top/uut/u_assertions/assert__rf_write
+#                      ../../bench/register_file/register_file_assertions.sv(56)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr2_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(39)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr1_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(32)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr2_read
+#                      ../../bench/register_file/register_file_assertions.sv(25)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr1_read
+#                      ../../bench/register_file/register_file_assertions.sv(18)       0     1
+# 
+#  quit
+# End time: 12:43:48 on Mar 16,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 7

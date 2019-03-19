@@ -1,0 +1,1602 @@
+# vsim -c -novopt -coverage -voptargs="+cover=bcest+/mips_16_top/uut" work.mips_16_top -do "toggle add -full sim:/mips_16_top/uut/*; run -all; coverage report -instance /mips_16_top/uut;coverage report -instance /mips_16_top/uut/*; fcover report -r /mips_16_top/uut/*;quit" -gSAVE_REGS=0 
+# Start time: 14:45:57 on Mar 18,2019
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mips_16_top
+# Loading sv_std.std
+# Loading work.mips_16_top
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.clock_generator
+# Loading work.clock_generator
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mips_16_core_top
+# Loading work.mips_16_core_top
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.IF_stage
+# Loading work.IF_stage
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.instruction_mem
+# Loading work.instruction_mem
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.ID_stage
+# Loading work.ID_stage
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.EX_stage
+# Loading work.EX_stage
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.alu
+# Loading work.alu
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.MEM_stage
+# Loading work.MEM_stage
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mem_if
+# Loading work.mem_if
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.data_mem
+# Loading work.data_mem
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.WB_stage
+# Loading work.WB_stage
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.register_file
+# Loading work.register_file
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.hazard_detection_unit
+# Loading work.hazard_detection_unit
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mips_16_top_tb
+# Loading work.mips_16_top_tb
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.reg_saver
+# Loading work.reg_saver
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.id_assertions
+# Loading work.id_assertions
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.EX_assertions
+# Loading work.EX_assertions
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.if_assertions
+# Loading work.if_assertions
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.wb_assertions
+# Loading work.wb_assertions
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.register_file_assertions
+# Loading work.register_file_assertions
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.hazard_detection_assertions
+# Loading work.hazard_detection_assertions
+# Refreshing /home/chenyang/common/smb_files/571systemverilog/finalproj-chenyangl_souvikr_robertog_aishwaryad/sim/top/work.mem_assertions
+# Loading work.mem_assertions
+# ** Warning: (vsim-PLI-3691) ../../bench/top/mips_16_top_tb.sv(188): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mips_16_top/u_mips_16_top_tb/#anonblk#116359842#164#4#/#anonblk#116359842#188#4# File: ../../bench/top/mips_16_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/top/mips_16_top_tb.sv(189): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mips_16_top/u_mips_16_top_tb/#anonblk#116359842#164#4#/#anonblk#116359842#189#4# File: ../../bench/top/mips_16_top_tb.sv
+# toggle add -full sim:/mips_16_top/uut/*
+# 0
+#  run -all
+#######################################################################################
+################### RUNNING TEST hazard_detection ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 215 ns Started: 215 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 225 ns Started: 225 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 255 ns Started: 255 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_detection.prog
+#    Time: 2020 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     2, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_detection.prog
+#    Time: 2020 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_detection.prog
+#    Time: 2020 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_detection.prog
+#    Time: 2020 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_detection.prog FAILED
+#    Time: 2020 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r0 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 2135 ns Started: 2135 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 2205 ns Started: 2205 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 2315 ns Started: 2315 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 2385 ns Started: 2385 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r0.prog
+#    Time: 4040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r0.prog FAILED
+#    Time: 4040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r1 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 4185 ns Started: 4185 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 4255 ns Started: 4255 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 4305 ns Started: 4305 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 4365 ns Started: 4365 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 4365 ns Started: 4365 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 4435 ns Started: 4435 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r1.prog
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r1.prog FAILED
+#    Time: 6060 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r2 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 6205 ns Started: 6205 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 6275 ns Started: 6275 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 6325 ns Started: 6325 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 6385 ns Started: 6385 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 6385 ns Started: 6385 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 6455 ns Started: 6455 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r2.prog
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r2.prog FAILED
+#    Time: 8080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r3 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 8225 ns Started: 8225 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 8295 ns Started: 8295 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 8345 ns Started: 8345 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 8405 ns Started: 8405 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 8405 ns Started: 8405 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 8475 ns Started: 8475 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r3.prog
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r3.prog FAILED
+#    Time: 10100 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r4 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 10245 ns Started: 10245 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 10315 ns Started: 10315 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 10365 ns Started: 10365 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 10425 ns Started: 10425 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 10425 ns Started: 10425 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 10495 ns Started: 10495 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r4.prog
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r4.prog FAILED
+#    Time: 12120 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r5 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 12265 ns Started: 12265 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 12335 ns Started: 12335 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 12385 ns Started: 12385 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 12445 ns Started: 12445 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 12445 ns Started: 12445 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 12515 ns Started: 12515 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r5.prog
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r5.prog FAILED
+#    Time: 14140 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r6 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 14285 ns Started: 14285 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 14355 ns Started: 14355 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 14405 ns Started: 14405 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 14465 ns Started: 14465 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 14465 ns Started: 14465 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 14535 ns Started: 14535 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r6.prog
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r6.prog FAILED
+#    Time: 16160 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST hazard_r7 ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ASSERTION FAILS
+#    Time: 16325 ns Started: 16325 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 16405 ns Started: 16405 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 16455 ns Started: 16455 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 16515 ns Started: 16515 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 16515 ns Started: 16515 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 16585 ns Started: 16585 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 16585 ns Started: 16585 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/hazard_r7.prog
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/hazard_r7.prog FAILED
+#    Time: 18180 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST add ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 18275 ns Started: 18275 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 18315 ns Started: 18315 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 18335 ns Started: 18335 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 1 WR EN 0 WR MUX 0 CMD 0  SRC2 MUX0 
+# ** Error: ASSERTION FAILS
+#    Time: 18345 ns Started: 18345 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 1 WR EN 0 WR MUX 0 CMD 0  SRC2 MUX0 
+# ** Error: Assertion error.
+#    Time: 18355 ns Started: 18355 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 18355 ns Started: 18355 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: Assertion error.
+#    Time: 18385 ns Started: 18385 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 18385 ns Started: 18385 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ASSERTION FAILS
+#    Time: 18415 ns Started: 18415 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 1 WR EN 0 WR MUX 0 CMD 0  SRC2 MUX0 
+# ** Error: Assertion error.
+#    Time: 18425 ns Started: 18425 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ASSERTION FAILS
+#    Time: 18425 ns Started: 18425 ns  Scope: mips_16_top.uut.ID_stage_inst.u_id_assertions File: ../../bench/ID/id_assertions.sv Line: 89
+# ************* instruction OP_ADD is 0 WR EN 0 WR MUX x CMD 0  SRC2 MUXx 
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     9, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     2, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    11, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    13, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    11, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    22, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/add.prog
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    24, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/add.prog FAILED
+#    Time: 20200 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST sub ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 20265 ns Started: 20265 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 20345 ns Started: 20345 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 20375 ns Started: 20375 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 20385 ns Started: 20385 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 20395 ns Started: 20395 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 20405 ns Started: 20405 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 20415 ns Started: 20415 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     3, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     5, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     2, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/sub.prog
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/sub.prog FAILED
+#    Time: 22220 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST and ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 22285 ns Started: 22285 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 22315 ns Started: 22315 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 22325 ns Started: 22325 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 22335 ns Started: 22335 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/and.prog
+#    Time: 24240 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/and.prog
+#    Time: 24240 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/and.prog
+#    Time: 24240 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/and.prog
+#    Time: 24240 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/and.prog FAILED
+#    Time: 24240 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST or ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 24305 ns Started: 24305 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 24335 ns Started: 24335 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 24345 ns Started: 24345 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 24355 ns Started: 24355 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/or.prog
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     7, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/or.prog FAILED
+#    Time: 26260 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST xor ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 26325 ns Started: 26325 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 26355 ns Started: 26355 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 26365 ns Started: 26365 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 26375 ns Started: 26375 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/xor.prog
+#    Time: 28280 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/xor.prog FAILED
+#    Time: 28280 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST sl ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 28345 ns Started: 28345 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 28375 ns Started: 28375 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 28385 ns Started: 28385 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 28395 ns Started: 28395 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/sl.prog
+#    Time: 30300 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    40, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/sl.prog
+#    Time: 30300 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =    96, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/sl.prog
+#    Time: 30300 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/sl.prog FAILED
+#    Time: 30300 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST sr ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 30365 ns Started: 30365 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 30395 ns Started: 30395 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 30405 ns Started: 30405 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 30415 ns Started: 30415 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/sr.prog
+#    Time: 32320 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/sr.prog
+#    Time: 32320 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/sr.prog FAILED
+#    Time: 32320 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST sru ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 32385 ns Started: 32385 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 32415 ns Started: 32415 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 32425 ns Started: 32425 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 32435 ns Started: 32435 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/sru.prog
+#    Time: 34340 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/sru.prog
+#    Time: 34340 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     6, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/sru.prog FAILED
+#    Time: 34340 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST addi ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/addi.prog
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/addi.prog FAILED
+#    Time: 36360 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST branch_taken ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 36425 ns Started: 36425 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: PC BRANCH ASSERTION FAILS
+#    Time: 36535 ns Started: 36525 ns  Scope: mips_16_top.uut.IF_stage_inst.u_if_assertions File: ../../bench/IF/if_assertions.sv Line: 44
+# ************* pc is  71 PAST PC IS  25 and pc should be   7 PAST IMM 238, PAST BRANCH TAKEN 1
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/branch_taken.prog
+#    Time: 38380 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/branch_taken.prog
+#    Time: 38380 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/branch_taken.prog
+#    Time: 38380 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/branch_taken.prog
+#    Time: 38380 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/branch_taken.prog FAILED
+#    Time: 38380 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST branch_not_taken ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 38445 ns Started: 38445 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/branch_not_taken.prog
+#    Time: 40400 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/branch_not_taken.prog
+#    Time: 40400 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/branch_not_taken.prog
+#    Time: 40400 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/branch_not_taken.prog FAILED
+#    Time: 40400 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST nop ----         200 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# *************** TEST ../../bench/top/testcases/nop.prog PASS
+# 
+#######################################################################################
+################### RUNNING TEST R0_load ----        3100 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 42495 ns Started: 42495 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 45015 ns Started: 45015 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 47535 ns Started: 47535 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 50055 ns Started: 50055 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 52575 ns Started: 52575 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 55095 ns Started: 55095 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 57615 ns Started: 57615 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 60135 ns Started: 60135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 62655 ns Started: 62655 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 65175 ns Started: 65175 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 67695 ns Started: 67695 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 70215 ns Started: 70215 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 72735 ns Started: 72735 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/R0_load.prog
+#    Time: 73440 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R0_load.prog
+#    Time: 73440 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R0_load.prog
+#    Time: 73440 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R0_load.prog FAILED
+#    Time: 73440 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R1_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 73515 ns Started: 73515 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 76035 ns Started: 76035 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 78555 ns Started: 78555 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 81075 ns Started: 81075 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 83595 ns Started: 83595 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 86115 ns Started: 86115 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 88635 ns Started: 88635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 91155 ns Started: 91155 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 93675 ns Started: 93675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 96195 ns Started: 96195 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 98715 ns Started: 98715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 101235 ns Started: 101235 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 103755 ns Started: 103755 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 106275 ns Started: 106275 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/R1_load_store.prog
+#    Time: 106960 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R1_load_store.prog
+#    Time: 106960 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R1_load_store.prog
+#    Time: 106960 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R1_load_store.prog
+#    Time: 106960 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R1_load_store.prog
+#    Time: 106960 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R1_load_store.prog FAILED
+#    Time: 106960 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R2_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 107035 ns Started: 107035 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 109555 ns Started: 109555 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 112075 ns Started: 112075 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 114595 ns Started: 114595 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 117115 ns Started: 117115 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 119635 ns Started: 119635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 122155 ns Started: 122155 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 124675 ns Started: 124675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 127195 ns Started: 127195 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 129715 ns Started: 129715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 132235 ns Started: 132235 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 134755 ns Started: 134755 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 137275 ns Started: 137275 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 139795 ns Started: 139795 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           2 TEST ../../bench/top/testcases/R2_load_store.prog
+#    Time: 140480 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R2_load_store.prog
+#    Time: 140480 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R2_load_store.prog
+#    Time: 140480 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R2_load_store.prog
+#    Time: 140480 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R2_load_store.prog
+#    Time: 140480 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R2_load_store.prog FAILED
+#    Time: 140480 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R3_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 140555 ns Started: 140555 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 143075 ns Started: 143075 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 145595 ns Started: 145595 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 148115 ns Started: 148115 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 150635 ns Started: 150635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 153155 ns Started: 153155 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 155675 ns Started: 155675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 158195 ns Started: 158195 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 160715 ns Started: 160715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 163235 ns Started: 163235 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 165755 ns Started: 165755 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 168275 ns Started: 168275 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 170795 ns Started: 170795 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 173315 ns Started: 173315 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/R3_load_store.prog
+#    Time: 174 us  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R3_load_store.prog
+#    Time: 174 us  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R3_load_store.prog
+#    Time: 174 us  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R3_load_store.prog
+#    Time: 174 us  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R3_load_store.prog
+#    Time: 174 us  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R3_load_store.prog FAILED
+#    Time: 174 us  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R4_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 174075 ns Started: 174075 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 176595 ns Started: 176595 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 179115 ns Started: 179115 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 181635 ns Started: 181635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 184155 ns Started: 184155 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 186675 ns Started: 186675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 189195 ns Started: 189195 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 191715 ns Started: 191715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 194235 ns Started: 194235 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 196755 ns Started: 196755 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 199275 ns Started: 199275 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 201795 ns Started: 201795 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 204315 ns Started: 204315 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 206835 ns Started: 206835 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/R4_load_store.prog
+#    Time: 207520 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R4_load_store.prog
+#    Time: 207520 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R4_load_store.prog
+#    Time: 207520 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R4_load_store.prog
+#    Time: 207520 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R4_load_store.prog
+#    Time: 207520 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R4_load_store.prog FAILED
+#    Time: 207520 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R5_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 207595 ns Started: 207595 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 207615 ns Started: 207615 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 207625 ns Started: 207625 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 210105 ns Started: 210105 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 210125 ns Started: 210125 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 210135 ns Started: 210135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 212615 ns Started: 212615 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 212635 ns Started: 212635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 212645 ns Started: 212645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 215125 ns Started: 215125 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 215145 ns Started: 215145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 215155 ns Started: 215155 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 217635 ns Started: 217635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 217655 ns Started: 217655 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 217665 ns Started: 217665 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 220145 ns Started: 220145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 220165 ns Started: 220165 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 220175 ns Started: 220175 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 222655 ns Started: 222655 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 222675 ns Started: 222675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 222685 ns Started: 222685 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 225165 ns Started: 225165 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 225185 ns Started: 225185 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 225195 ns Started: 225195 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 227675 ns Started: 227675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 227695 ns Started: 227695 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 227705 ns Started: 227705 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 230185 ns Started: 230185 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 230205 ns Started: 230205 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 230215 ns Started: 230215 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 232695 ns Started: 232695 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 232715 ns Started: 232715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 232725 ns Started: 232725 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 235205 ns Started: 235205 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 235225 ns Started: 235225 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 235235 ns Started: 235235 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 237715 ns Started: 237715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 237735 ns Started: 237735 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 237745 ns Started: 237745 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 240225 ns Started: 240225 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 240245 ns Started: 240245 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 240255 ns Started: 240255 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           1 TEST ../../bench/top/testcases/R5_load_store.prog
+#    Time: 241040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R5_load_store.prog
+#    Time: 241040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R5_load_store.prog
+#    Time: 241040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R5_load_store.prog
+#    Time: 241040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R5_load_store.prog
+#    Time: 241040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R5_load_store.prog FAILED
+#    Time: 241040 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R6_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 241115 ns Started: 241115 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 243635 ns Started: 243635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 246155 ns Started: 246155 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 248675 ns Started: 248675 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 251195 ns Started: 251195 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 253715 ns Started: 253715 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 256235 ns Started: 256235 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 258755 ns Started: 258755 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 261275 ns Started: 261275 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 263795 ns Started: 263795 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 266315 ns Started: 266315 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 268835 ns Started: 268835 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 271355 ns Started: 271355 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 273875 ns Started: 273875 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R6_load_store.prog
+#    Time: 274560 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R6_load_store.prog
+#    Time: 274560 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R6_load_store.prog
+#    Time: 274560 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           6 TEST ../../bench/top/testcases/R6_load_store.prog
+#    Time: 274560 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R6_load_store.prog
+#    Time: 274560 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R6_load_store.prog FAILED
+#    Time: 274560 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+#######################################################################################
+################### RUNNING TEST R7_load_store ----        3350 cycles ##################
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 274635 ns Started: 274635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 274645 ns Started: 274645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 277135 ns Started: 277135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 277145 ns Started: 277145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 279635 ns Started: 279635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 279645 ns Started: 279645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 282135 ns Started: 282135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 282145 ns Started: 282145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 284635 ns Started: 284635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 284645 ns Started: 284645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 287135 ns Started: 287135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 287145 ns Started: 287145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 289635 ns Started: 289635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 289645 ns Started: 289645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 292135 ns Started: 292135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 292145 ns Started: 292145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 294635 ns Started: 294635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 294645 ns Started: 294645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 297135 ns Started: 297135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 297145 ns Started: 297145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 299635 ns Started: 299635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 299645 ns Started: 299645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 302135 ns Started: 302135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 302145 ns Started: 302145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 304635 ns Started: 304635 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 304645 ns Started: 304645 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ERROR: Unknown Instruction: xxxx
+# ** Error: Assertion error.
+#    Time: 307135 ns Started: 307135 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: Assertion error.
+#    Time: 307145 ns Started: 307145 ns  Scope: mips_16_top.uut.hazard_detection_unit_inst.u_hazard_detection_assertions File: ../../bench/hazard_detection/hazard_detection_assertions.sv Line: 33
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           3 TEST ../../bench/top/testcases/R7_load_store.prog
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     8, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           4 TEST ../../bench/top/testcases/R7_load_store.prog
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     4, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           5 TEST ../../bench/top/testcases/R7_load_store.prog
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN REGISTER FILE COMPARISON - REGISTER           7 TEST ../../bench/top/testcases/R7_load_store.prog
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 194
+# EXPECTED RESULT =     1, OBTAINED VALUE =     0
+# ** Error: ERROR IN MEMORY COMPARISON - MEMORY POSITION           0 TEST ../../bench/top/testcases/R7_load_store.prog
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 201
+# EXPECTED RESULT =   1, OBTAINED VALUE =     0
+# ** Error: *************** TEST ../../bench/top/testcases/R7_load_store.prog FAILED
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 209
+# ** Error: ********** SIMULATION FAILED - ERRORS FOUND! ***********
+#    Time: 308080 ns  Scope: mips_16_top.u_mips_16_top_tb File: ../../bench/top/mips_16_top_tb.sv Line: 215
+# ** Note: $stop    : ../../bench/top/mips_16_top_tb.sv(216)
+#    Time: 308080 ns  Iteration: 1  Instance: /mips_16_top/u_mips_16_top_tb
+# Break in Module mips_16_top_tb at ../../bench/top/mips_16_top_tb.sv line 216
+# Stopped at ../../bench/top/mips_16_top_tb.sv line 216
+#  coverage report -instance /mips_16_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut
+# === Design Unit: work.mips_16_core_top
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            0         0         0     100.0
+#     Branches                         0         0         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                   1010       212       798      20.9
+# 
+# 
+# Total Coverage By Instance (filtered view): 20.9%
+# 
+# 
+# coverage report -instance /mips_16_top/uut/*
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/IF_stage_inst
+# === Design Unit: work.IF_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         5         5         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                     68        66         2      97.0
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/ID_stage_inst
+# === Design Unit: work.ID_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           84        81         3      96.4
+#     Branches                        41        39         2      95.1
+#     FEC Condition Terms              4         4         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    586       260       326      44.3
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/EX_stage_inst
+# === Design Unit: work.EX_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    434       122       312      28.1
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/MEM_stage_inst
+# === Design Unit: work.MEM_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            8         8         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    272        48       224      17.6
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/WB_stage_inst
+# === Design Unit: work.WB_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            1         1         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    354        58       296      16.3
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/register_file_inst
+# === Design Unit: work.register_file
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           11        11         0     100.0
+#     Branches                         7         7         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    296        32       264      10.8
+# 
+# =================================================================================
+# === Instance: /mips_16_top/uut/hazard_detection_unit_inst
+# === Design Unit: work.hazard_detection_unit
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         4         4         0     100.0
+#     FEC Condition Terms              8         8         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                     32        32         0     100.0
+# 
+# 
+# Total Coverage By Instance (filtered view): 81.1%
+# 
+# 
+#  fcover report -r /mips_16_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/pc_increment_c 
+#                                          if_assertions Verilog  SVA  ../../bench/IF/if_assertions.sv(25)
+#                                                                               30124 Covered   
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/pc_stall_c 
+#                                          if_assertions Verilog  SVA  ../../bench/IF/if_assertions.sv(36)
+#                                                                                 483 Covered   
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/pc_branch_c 
+#                                          if_assertions Verilog  SVA  ../../bench/IF/if_assertions.sv(47)
+#                                                                                 113 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_stall_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(48)
+#                                                                                 483 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_op_stall_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(59)
+#                                                                                 483 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_dest_stall_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(70)
+#                                                                                 483 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_NOP_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(81)
+#                                                                               29290 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_ADD_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(92)
+#                                                                                  13 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SUB_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(103)
+#                                                                                 125 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_AND_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(114)
+#                                                                                   9 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_OR_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(125)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_XOR_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(136)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SL_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(147)
+#                                                                                 120 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SR_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(158)
+#                                                                                   9 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_SRU_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(169)
+#                                                                                   8 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_ADDI_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(180)
+#                                                                                 552 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_LD_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(191)
+#                                                                                 209 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/P_OP_ST_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(202)
+#                                                                                 111 Covered   
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/id_wb_mux_c 
+#                                          id_assertions Verilog  SVA  ../../bench/ID/id_assertions.sv(213)
+#                                                                                 114 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_add_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(37)
+#                                                                                 952 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sub_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(46)
+#                                                                                 125 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_and_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(58)
+#                                                                                   9 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_or_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(68)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_xor_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(80)
+#                                                                                  10 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sl_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(89)
+#                                                                                 120 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sr_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(98)
+#                                                                                   9 Covered   
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/check_sru_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(107)
+#                                                                                   8 Covered   
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/mem_write_c 
+#                                          mem_assertions Verilog  SVA  ../../bench/MEM/mem_assertions.sv(18)
+#                                                                                 111 Covered   
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/mem_read_c 
+#                                          mem_assertions Verilog  SVA  ../../bench/MEM/mem_assertions.sv(25)
+#                                                                                1262 Covered   
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/wb_data_true_c 
+#                                          wb_assertions Verilog  SVA  ../../bench/WB/wb_assertions.sv(30)
+#                                                                                 209 Covered   
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/wb_data_false_c 
+#                                          wb_assertions Verilog  SVA  ../../bench/WB/wb_assertions.sv(37)
+#                                                                                 981 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr1_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(19)
+#                                                                                1155 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr2_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(26)
+#                                                                                1092 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr1_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(33)
+#                                                                               29463 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_addr2_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(40)
+#                                                                               29526 Covered   
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/rf_write_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(60)
+#                                                                               29656 Covered   
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/stall_length_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(18)
+#                                                                                 483 Covered   
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/stall_operation_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(34)
+#                                                                                 483 Covered   
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/stall_operation_backwards_c 
+#                                          hazard_detection_assertions Verilog  SVA  ../../bench/hazard_detection/hazard_detection_assertions.sv(41)
+#                                                                                 483 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 39
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/assert__pc_branch
+#                      ../../bench/IF/if_assertions.sv(42)       1     1
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/assert__pc_stall
+#                      ../../bench/IF/if_assertions.sv(31)       0     1
+# /mips_16_top/uut/IF_stage_inst/u_if_assertions/assert__pc_increment
+#                      ../../bench/IF/if_assertions.sv(20)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_BZ
+#                      ../../bench/ID/id_assertions.sv(208)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_ST
+#                      ../../bench/ID/id_assertions.sv(197)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_LD
+#                      ../../bench/ID/id_assertions.sv(186)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_ADDI
+#                      ../../bench/ID/id_assertions.sv(175)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SRU
+#                      ../../bench/ID/id_assertions.sv(164)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SR
+#                      ../../bench/ID/id_assertions.sv(153)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SL
+#                      ../../bench/ID/id_assertions.sv(142)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_XOR
+#                      ../../bench/ID/id_assertions.sv(131)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_OR
+#                      ../../bench/ID/id_assertions.sv(120)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_AND
+#                      ../../bench/ID/id_assertions.sv(109)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_SUB
+#                      ../../bench/ID/id_assertions.sv(98)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_ADD
+#                      ../../bench/ID/id_assertions.sv(87)      38     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__P_OP_NOP
+#                      ../../bench/ID/id_assertions.sv(76)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__id_dest_stall
+#                      ../../bench/ID/id_assertions.sv(65)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__id_op_stall
+#                      ../../bench/ID/id_assertions.sv(54)       0     1
+# /mips_16_top/uut/ID_stage_inst/u_id_assertions/assert__id_stall
+#                      ../../bench/ID/id_assertions.sv(43)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sru
+#                      ../../bench/EX/EX_assertions.sv(105)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sr
+#                      ../../bench/EX/EX_assertions.sv(96)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sl
+#                      ../../bench/EX/EX_assertions.sv(87)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_xor
+#                      ../../bench/EX/EX_assertions.sv(75)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_or
+#                      ../../bench/EX/EX_assertions.sv(66)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_and
+#                      ../../bench/EX/EX_assertions.sv(53)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_sub
+#                      ../../bench/EX/EX_assertions.sv(44)       0     1
+# /mips_16_top/uut/EX_stage_inst/u_ex_assertions/assert__check_add
+#                      ../../bench/EX/EX_assertions.sv(31)       0     1
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/assert__mem_read
+#                      ../../bench/MEM/mem_assertions.sv(24)       0     1
+# /mips_16_top/uut/MEM_stage_inst/dmem/u_mem_assertions/assert__mem_write
+#                      ../../bench/MEM/mem_assertions.sv(13)       0     1
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/assert__wb_data_false
+#                      ../../bench/WB/wb_assertions.sv(36)       0     1
+# /mips_16_top/uut/WB_stage_inst/u_wb_assertions/assert__wb_data_true
+#                      ../../bench/WB/wb_assertions.sv(29)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_write
+#                      ../../bench/register_file/register_file_assertions.sv(56)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr2_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(39)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr1_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(32)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr2_read
+#                      ../../bench/register_file/register_file_assertions.sv(25)       0     1
+# /mips_16_top/uut/register_file_inst/u_rf_assertions/assert__rf_addr1_read
+#                      ../../bench/register_file/register_file_assertions.sv(18)       0     1
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/assert__stall_operation_backwards
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(40)       0     1
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/assert__stall_operation
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(33)     209     1
+# /mips_16_top/uut/hazard_detection_unit_inst/u_hazard_detection_assertions/assert__stall_length
+#                      ../../bench/hazard_detection/hazard_detection_assertions.sv(17)       0     1
+# 
+# quit
+# End time: 14:46:01 on Mar 18,2019, Elapsed time: 0:00:04
+# Errors: 416, Warnings: 3

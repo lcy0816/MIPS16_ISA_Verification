@@ -1,0 +1,124 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/EX_stage_top_top/uut" work.EX_stage_top -do "toggle add -full sim:/EX_stage_top/uut/*; run -all;  coverage report -instance /EX_stage_top/uut; fcover report -r /EX_stage_top/uut/*; quit" 
+# Start time: 15:24:21 on Mar 18,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-2216) Cannot find instance '/EX_stage_top_top/uut' specified in +cover.
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.EX_stage_top(fast)
+# Loading work.EX_stage(fast)
+# Loading work.EX_assertions(fast)
+# Loading work.Ex_stage_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/EX/Ex_stage_top_tb.sv(54): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /EX_stage_top/u_ex_stage_top_tb/#anonblk#1865714#39#4# File: ../../bench/EX/Ex_stage_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/EX/Ex_stage_top_tb.sv(55): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /EX_stage_top/u_ex_stage_top_tb/#anonblk#1865714#39#4# File: ../../bench/EX/Ex_stage_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/EX/Ex_stage_top_tb.sv(56): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /EX_stage_top/u_ex_stage_top_tb/#anonblk#1865714#39#4# File: ../../bench/EX/Ex_stage_top_tb.sv
+# toggle add -full sim:/EX_stage_top/uut/*
+# 0
+#  run -all
+# ************* TEST add PASSED!!!
+# ************* TEST sub PASSED!!!
+# ************* TEST and PASSED!!!
+# ************* TEST or PASSED!!!
+# ************* TEST xor PASSED!!!
+# ************* TEST sl PASSED!!!
+# ************* TEST sr PASSED!!!
+# ************* TEST sru PASSED!!!
+# *********** HAZARD DETECTION UNIT TESTCASES PASSED!!!! *********** 
+# ** Note: $stop    : ../../bench/EX/Ex_stage_top_tb.sv(92)
+#    Time: 16155 ns  Iteration: 1  Instance: /EX_stage_top/u_ex_stage_top_tb
+# Break in Module Ex_stage_top_tb at ../../bench/EX/Ex_stage_top_tb.sv line 92
+# Stopped at ../../bench/EX/Ex_stage_top_tb.sv line 92
+#   coverage report -instance /EX_stage_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /EX_stage_top/uut
+# === Design Unit: work.EX_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            4         4         0     100.0
+#     Branches                         2         2         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    598       154       444      25.7
+# 
+# 
+# Total Coverage By Instance (filtered view): 75.2%
+# 
+# 
+#  fcover report -r /EX_stage_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /EX_stage_top/uut/u_assertions/check_add_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(37)
+#                                                                                  51 Covered   
+# /EX_stage_top/uut/u_assertions/check_sub_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(46)
+#                                                                                  10 Covered   
+# /EX_stage_top/uut/u_assertions/check_and_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(58)
+#                                                                                   8 Covered   
+# /EX_stage_top/uut/u_assertions/check_or_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(68)
+#                                                                                   8 Covered   
+# /EX_stage_top/uut/u_assertions/check_xor_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(80)
+#                                                                                   8 Covered   
+# /EX_stage_top/uut/u_assertions/check_sl_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(89)
+#                                                                                   9 Covered   
+# /EX_stage_top/uut/u_assertions/check_sr_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(102)
+#                                                                                   9 Covered   
+# /EX_stage_top/uut/u_assertions/check_sru_c 
+#                                          EX_assertions Verilog  SVA  ../../bench/EX/EX_assertions.sv(111)
+#                                                                                   8 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 8
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /EX_stage_top/uut/u_assertions/assert__check_sru
+#                      ../../bench/EX/EX_assertions.sv(109)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_sr
+#                      ../../bench/EX/EX_assertions.sv(96)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_sl
+#                      ../../bench/EX/EX_assertions.sv(87)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_xor
+#                      ../../bench/EX/EX_assertions.sv(75)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_or
+#                      ../../bench/EX/EX_assertions.sv(66)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_and
+#                      ../../bench/EX/EX_assertions.sv(53)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_sub
+#                      ../../bench/EX/EX_assertions.sv(44)       0     1
+# /EX_stage_top/uut/u_assertions/assert__check_add
+#                      ../../bench/EX/EX_assertions.sv(31)       0     1
+# 
+#  quit
+# End time: 15:24:23 on Mar 18,2019, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4

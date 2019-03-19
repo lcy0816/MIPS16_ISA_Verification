@@ -1,0 +1,93 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/mem_top/uut" work.mem_top -do "toggle add -full sim:/mem_top/uut/*; run -all;  coverage report -instance /mem_top/uut; fcover report -r /mem_top/uut/*; quit" 
+# Start time: 12:42:50 on Mar 16,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.mem_top(fast)
+# Loading work.data_mem(fast)
+# Loading work.mem_assertions(fast)
+# Loading work.mem_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/MEM/mem_top_tb.sv(56): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mem_top/u_mem_top_tb/#anonblk#112294546#43#4# File: ../../bench/MEM/mem_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/MEM/mem_top_tb.sv(57): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mem_top/u_mem_top_tb/#anonblk#112294546#43#4# File: ../../bench/MEM/mem_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/MEM/mem_top_tb.sv(58): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /mem_top/u_mem_top_tb/#anonblk#112294546#43#4# File: ../../bench/MEM/mem_top_tb.sv
+# toggle add -full sim:/mem_top/uut/*
+# 0
+#  run -all
+# ************* TEST R0_load PASSED!!!
+# ************* TEST R1_load_store PASSED!!!
+# ************* TEST R2_load_store PASSED!!!
+# ************* TEST R3_load_store PASSED!!!
+# ************* TEST R4_load_store PASSED!!!
+# ************* TEST R5_load_store PASSED!!!
+# ************* TEST R6_load_store PASSED!!!
+# ************* TEST R7_load_store PASSED!!!
+# *********** MEM STAGE UNIT TESTCASES PASSED!!!! *********** 
+# ** Note: $stop    : ../../bench/MEM/mem_top_tb.sv(96)
+#    Time: 265655 ns  Iteration: 1  Instance: /mem_top/u_mem_top_tb
+# Break in Module mem_top_tb at ../../bench/MEM/mem_top_tb.sv line 96
+# Stopped at ../../bench/MEM/mem_top_tb.sv line 96
+#   coverage report -instance /mem_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /mem_top/uut
+# === Design Unit: work.MEM_stage
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                            8         7         1      87.5
+#     Branches                         2         1         1      50.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    176        34       142      19.3
+# 
+# 
+# Total Coverage By Instance (filtered view): 52.2%
+# 
+# 
+#  fcover report -r /mem_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /mem_top/uut/dmem/u_assertions/mem_write_c 
+#                                          mem_assertions Verilog  SVA  ../../bench/MEM/mem_assertions.sv(18)
+#                                                                                2048 Covered   
+# /mem_top/uut/dmem/u_assertions/mem_read_c 
+#                                          mem_assertions Verilog  SVA  ../../bench/MEM/mem_assertions.sv(25)
+#                                                                                5952 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 2
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /mem_top/uut/dmem/u_assertions/assert__mem_read
+#                      ../../bench/MEM/mem_assertions.sv(24)       0     1
+# /mem_top/uut/dmem/u_assertions/assert__mem_write
+#                      ../../bench/MEM/mem_assertions.sv(13)       0     1
+# 
+#  quit
+# End time: 12:42:51 on Mar 16,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 3

@@ -1,0 +1,921 @@
+# vsim -c -coverage -voptargs="+cover=bcest+/register_file_top/uut" work.register_file_top -do "toggle add -full sim:/register_file_top/uut/*; run -all;  coverage report -instance /register_file_top/uut; fcover report -r /register_file_top/uut/*; quit" 
+# Start time: 12:44:29 on Mar 16,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.register_file_top(fast)
+# Loading work.register_file_assertions(fast)
+# Loading work.register_file_top_tb(fast)
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(86): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(87): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(88): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(89): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(90): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(92): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# ** Warning: (vsim-PLI-3691) ../../bench/register_file/register_file_top_tb.sv(93): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Region: /register_file_top/u_register_file_top_tb/#anonblk#187320658#71#4# File: ../../bench/register_file/register_file_top_tb.sv
+# toggle add -full sim:/register_file_top/uut/*
+# 0
+#  run -all
+# ************* TEST hazard_r0 PASSED!!!
+# ************* TEST hazard_r1 PASSED!!!
+# ************* TEST hazard_r2 PASSED!!!
+# ************* TEST hazard_r3 PASSED!!!
+# ************* TEST hazard_r4 PASSED!!!
+# ************* TEST hazard_r5 PASSED!!!
+# ************* TEST hazard_r6 PASSED!!!
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14176 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_1 File: ../../bench/register_file/register_file_top_tb.sv Line: 98
+# INPUT DATA 0000000000000000 EXPECTED 0000000000000111
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14186 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_1 File: ../../bench/register_file/register_file_top_tb.sv Line: 98
+# INPUT DATA 0000000000000000 EXPECTED 0000000000000111
+# ** Error: TEST hazard_r7 - ERROR WHILE COMPARING OUTPUTS
+#    Time: 14196 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_1 File: ../../bench/register_file/register_file_top_tb.sv Line: 98
+# INPUT DATA 0000000000000000 EXPECTED 0000000000000111
+# ** Error: ************* TEST hazard_r7 FAILED!!!
+#    Time: 16155 ns  Scope: register_file_top.u_register_file_top_tb File: ../../bench/register_file/register_file_top_tb.sv Line: 113
+# ************* TEST hazard_detection PASSED!!!
+# ************* TEST nop PASSED!!!
+# ************* TEST addi PASSED!!!
+# ** Error: TEST sub - ERROR WHILE COMPARING OUTPUTS
+#    Time: 22566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000001000
+# ** Error: TEST sub - ERROR WHILE COMPARING OUTPUTS
+#    Time: 22576 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000001000
+# ** Error: TEST sub - ERROR WHILE COMPARING OUTPUTS
+#    Time: 22586 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000001000
+# ** Error: ************* TEST sub FAILED!!!
+#    Time: 24235 ns  Scope: register_file_top.u_register_file_top_tb File: ../../bench/register_file/register_file_top_tb.sv Line: 113
+# ************* TEST and PASSED!!!
+# ************* TEST or PASSED!!!
+# ************* TEST xor PASSED!!!
+# ************* TEST sl PASSED!!!
+# ************* TEST sr PASSED!!!
+# ************* TEST sru PASSED!!!
+# ************* TEST add PASSED!!!
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 38606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 38726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 38846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 38966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 39926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 40886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 41966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 42926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 43886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 44966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 45926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 46886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 47966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 48926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 49886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 50966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 51926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 52886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 53966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 54926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 55886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 56966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 57926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 58886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 59966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 60926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 61886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 62966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 63926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 64886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 65966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66206 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66326 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66446 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66566 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66686 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66806 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 66926 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67046 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67166 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67286 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67406 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67526 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67646 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67766 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 67886 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68006 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68126 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68246 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68366 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68486 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68606 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68726 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68846 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 68966 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: TEST R0_load - ERROR WHILE COMPARING OUTPUTS
+#    Time: 69086 ns  Scope: register_file_top.u_register_file_top_tb.#anonblk#187320658#71#4#.check_output_read_data_2 File: ../../bench/register_file/register_file_top_tb.sv Line: 105
+# INPUT DATA 0000000000000000 EXPECTED 0000000000011000
+# ** Error: ************* TEST R0_load FAILED!!!
+#    Time: 69395 ns  Scope: register_file_top.u_register_file_top_tb File: ../../bench/register_file/register_file_top_tb.sv Line: 113
+# ************* TEST R1_load_store PASSED!!!
+# ************* TEST R2_load_store PASSED!!!
+# ************* TEST R3_load_store PASSED!!!
+# ************* TEST R4_load_store PASSED!!!
+# ************* TEST R5_load_store PASSED!!!
+# ************* TEST R6_load_store PASSED!!!
+# ************* TEST R7_load_store PASSED!!!
+# ** Error: *********** REGISTER FILE UNIT TESTCASES FAILED!!!! ***********
+#    Time: 304035 ns  Scope: register_file_top.u_register_file_top_tb File: ../../bench/register_file/register_file_top_tb.sv Line: 126
+# ** Note: $stop    : ../../bench/register_file/register_file_top_tb.sv(129)
+#    Time: 304035 ns  Iteration: 1  Instance: /register_file_top/u_register_file_top_tb
+# Break in Module register_file_top_tb at ../../bench/register_file/register_file_top_tb.sv line 129
+# Stopped at ../../bench/register_file/register_file_top_tb.sv line 129
+#   coverage report -instance /register_file_top/uut
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /register_file_top/uut
+# === Design Unit: work.register_file
+# =================================================================================
+#     Enabled Coverage            Active      Hits    Misses % Covered
+#     ----------------            ------      ----    ------ ---------
+#     Stmts                           11        11         0     100.0
+#     Branches                         7         7         0     100.0
+#     FEC Condition Terms              0         0         0     100.0
+#     FEC Expression Terms             0         0         0     100.0
+#     Toggle Bins                    124        34        90      27.4
+# 
+# 
+# Total Coverage By Instance (filtered view): 75.8%
+# 
+# 
+#  fcover report -r /register_file_top/uut/*
+# 
+# DIRECTIVE COVERAGE:
+# ---------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Count Status    
+#                                          Unit   UnitType                                      
+# ---------------------------------------------------------------------------------------------
+# /register_file_top/uut/u_assertions/rf_addr1_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(19)
+#                                                                               14518 Covered   
+# /register_file_top/uut/u_assertions/rf_addr2_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(26)
+#                                                                               13718 Covered   
+# /register_file_top/uut/u_assertions/rf_addr1_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(33)
+#                                                                               15832 Covered   
+# /register_file_top/uut/u_assertions/rf_addr2_0_read_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(40)
+#                                                                               16632 Covered   
+# /register_file_top/uut/u_assertions/rf_write_c 
+#                                          register_file_assertions Verilog  SVA  ../../bench/register_file/register_file_assertions.sv(60)
+#                                                                                4108 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.0%  COVERS: 5
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /register_file_top/uut/u_assertions/assert__rf_write
+#                      ../../bench/register_file/register_file_assertions.sv(56)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr2_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(39)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr1_0_read
+#                      ../../bench/register_file/register_file_assertions.sv(32)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr2_read
+#                      ../../bench/register_file/register_file_assertions.sv(25)       0     1
+# /register_file_top/uut/u_assertions/assert__rf_addr1_read
+#                      ../../bench/register_file/register_file_assertions.sv(18)       0     1
+# 
+#  quit
+# End time: 12:44:31 on Mar 16,2019, Elapsed time: 0:00:02
+# Errors: 265, Warnings: 7
